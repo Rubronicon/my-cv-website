@@ -1,0 +1,100 @@
+/* Обнулення базових відступів для передбачуваного відображення */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Налаштування фону сторінки та шрифтів */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* Контейнер центрує резюме на екрані та обмежує максимальну ширину */
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилізація шапки */
+.cv-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eef2f5;
+}
+
+.cv-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.cv-header .subtitle {
+    font-size: 1.2rem;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cv-header .contacts {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+}
+
+.cv-header .contacts a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.cv-header .contacts a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Стилізація секцій */
+.cv-section {
+    margin-bottom: 30px;
+}
+
+.cv-section h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+.cv-section p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Стилізація списків */
+.styled-list, .styled-ordered-list {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.styled-list li, .styled-ordered-list li {
+    margin-bottom: 8px;
+}
+
+/* Стилізація підвалу */
+.cv-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eef2f5;
+    color: #95a5a6;
+}
