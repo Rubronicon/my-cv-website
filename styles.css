@@ -55,30 +55,12 @@ body {
     align-items: flex-start;
 }
 
-.header-summary-content {
-    width: 40%;
-    min-width: 250px; /* Захист від сильного стиснення */
-    font-size: 0.85rem;
-    padding-right: 20px;
-    font-weight: 300;
-}
-
-/* --- Шапка резюме --- */
-.cv-header {
-    display: flex;
-    flex-direction: row;
-    height: 120px;
-}
-.header-main-content {
-    width: 60%;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
 .header-main-content p {
     font-size: 0.9rem;
     color: #555;
     font-weight: 300;
 }
+
 .header-main-content h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
@@ -87,8 +69,10 @@ body {
     text-align: left;
     margin-top: -10px;
 }
+
 .header-summary-content {
     width: 40%;
+    min-width: 250px; /* Захист від сильного стиснення */
     font-size: 0.85rem;
     padding-right: 20px;
     font-weight: 300;
