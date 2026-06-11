@@ -8,45 +8,150 @@
 </head>
 <body>
 
-<div class="cv-container">
-    <div class="theme-toggle-container">
-        <button id="theme-toggle-btn">Змінити тему 🌙/☀️</button>
+<div class="cv-main-wrapper">
+    <div class="top-meta-container dotted-grid">
+        <div class="theme-toggle-container dotted-subgrid">
+            <button id="theme-toggle-btn">Змінити тему 🌙/☀️</button>
+        </div>
+        <div class="header-graphic-container dotted-subgrid">
+            <svg viewBox="0 0 100 60" class="cv-graphic">
+                <path d="M10 10 L40 10 L40 40 L70 40 L70 10 L10 10 M10 40 L40 40 M70 40 L100 40" stroke="currentColor" fill="none" stroke-width="2" />
+                <circle cx="10" cy="10" r="3" fill="currentColor" />
+                <circle cx="100" cy="40" r="3" fill="currentColor" />
+            </svg>
+        </div>
     </div>
 
-    <header class="cv-header">
-        <h1>Тукачов Денис</h1>
-        <p class="subtitle">Junior Web Developer</p>
-        <div class="contacts">
-            <span><strong>Email:</strong> <a href="mailto:student@example.com">student@example.com</a></span> |
-            <span><strong>Телефон:</strong> +380 (XX) XXX-XX-XX</span>
+    <header class="cv-header dotted-grid">
+        <div class="header-main-content dotted-subgrid">
+            <p>Junior Web Developer</p>
+            <h1>Тукачов Денис</h1>
+        </div>
+        <div class="header-summary-content dotted-subgrid">
+            <p>Seeking to provide reliable and innovative web development solutions to dynamic tech companies. Passionate about creating efficient interfaces and mastering new technologies.</p>
         </div>
     </header>
 
-    <main>
-        <section class="cv-section">
-            <h2>Про мене</h2>
-            <p>Студент, який активно вивчає веб-програмування. Маю велике бажання розвиватися у сфері IT, створювати зручні інтерфейси та вивчати нові технології.</p>
-        </section>
+    <div class="cv-columns-container">
 
-        <section class="cv-section">
-            <h2>Освіта</h2>
-            <ul class="styled-list">
-                <li><strong>Університет:</strong> Національний Університет "Львівська Політехніка"</li>
-                <li><strong>Спеціальність:</strong> Кібербезпека</li>
-            </ul>
-        </section>
+        <main class="left-column dotted-grid">
 
-        <section class="cv-section">
-            <h2>Відгуки попередніх роботодавців</h2>
-            <div id="comments-container">
-                <p>Завантаження відгуків...</p>
-            </div>
-        </section>
-    </main>
+            <section class="cv-section Experience dotted-subgrid">
+                <h2>Досвід роботи</h2>
 
-    <footer class="cv-footer">
-        <div id="browser-info" style="margin-bottom: 15px; font-size: 0.85rem; color: #7f8c8d;"></div>
-        <p><small>&copy; 2026 Тукачов Денис.</small></p>
+                <div class="exp-item dotted-subgrid">
+                    <div class="item-header">
+                        <div class="item-role-co">
+                            <strong>Junior Front-End Developer</strong>, <span class="company">TechCorp Solutions</span>
+                        </div>
+                        <div class="item-dates">Dec 202X – Present</div>
+                    </div>
+                    <div class="item-details">
+                        <ul>
+                            <li>Розробка та підтримка інтерфейсів веб-додатків за допомогою HTML5, CSS3, та JavaScript.</li>
+                            <li>Створення адаптивних лейа Carrs та інтерактивних елементів UI.</li>
+                            <li>Взаємодія з RESTful API для відображення динамічних даних.</li>
+                            <li>Спільна робота з командою дизайнерів та бекенд-розробників через Git.</li>
+                            <li>Участь у код-рев’ю та оптимізації продуктивності.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-item dotted-subgrid">
+                    <div class="item-header">
+                        <div class="item-role-co">
+                            <strong>Trainee Web Developer</strong>, <span class="company">WebInnovations Studio</span>
+                        </div>
+                        <div class="item-dates">Aug 202X – Dec 202X</div>
+                    </div>
+                    <div class="item-details">
+                        <ul>
+                            <li>Опанування основних веб-технологій (HTML, CSS, базовий JavaScript).</li>
+                            <li>Створення простих лендінгів за макетами Figma.</li>
+                            <li>Допомога старшим розробникам у тестуванні та документації коду.</li>
+                            <li>Взаємодія з командою для вирішення технічних завдань.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-item dotted-subgrid">
+                    <div class="item-header">
+                        <div class="item-role-co">
+                            <strong>Freelance Web Developer</strong>, <span class="company">Клієнти-Сім'ї (наприклад, Сім'я Джонсон)</span>
+                        </div>
+                        <div class="item-dates">Mar 20XX – Jul 20XX</div>
+                    </div>
+                    <div class="item-details">
+                        <p>Надання послуг з розробки простих веб-сторінок та допомога в налаштуванні хостингу для приватних клієнтів.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cv-section Education dotted-subgrid">
+                <h2>Освіта</h2>
+                <div class="edu-item dotted-subgrid">
+                    <div class="item-header">
+                        <div class="item-school"><strong>IT-Академія "DevPoint"</strong>, Навчальний Центр</div>
+                        <div class="item-dates">2022 - 2023</div>
+                    </div>
+                    <div class="item-degree">Сертифікований курс: Front-End Development (React)</div>
+                    <ul class="styled-list">
+                        <li>Опановано: React, Redux, Node.js, Webpack, Git flow.</li>
+                        <li>Розроблено дипломний проєкт - SPA з використанням API.</li>
+                    </ul>
+                </div>
+
+                <div class="edu-item dotted-subgrid">
+                    <div class="item-header">
+                        <div class="item-school"><strong>Дніпровський Національний Університет</strong>, Коледж</div>
+                        <div class="item-dates">2018 - 2022</div>
+                    </div>
+                    <div class="item-degree">Молодший Спеціаліст, Спеціальність: Прикладна Математика</div>
+                    <ul class="styled-list">
+                        <li>Основи алгоритмів, дискретна математика, логіка.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cv-section Comments dotted-subgrid">
+                <h2>Відгуки роботодавців</h2>
+                <div id="comments-container">
+                    <p>Завантаження відгуків...</p>
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-column dotted-grid">
+
+            <section class="cv-section Contact dotted-subgrid">
+                <h2>Контакти</h2>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:student@example.com">student@example.com</a></p>
+                    <p><strong>Телефон:</strong> +380 (XX) XXX-XX-XX</p>
+                    <p><strong>Адреса:</strong> м. Дніпро, Україна (або 4321 N. Broad Street, Philadelphia, PA 21098)</p>
+                </div>
+            </section>
+
+            <section class="cv-section Communication dotted-subgrid">
+                <h2>Комунікація</h2>
+                <p>Ефективно взаємодію з клієнтами для визначення вимог до проєкту та надаю регулярні оновлення. Чітко комунікую з командою для вирішення завдань.</p>
+            </section>
+
+            <section class="cv-section Leadership dotted-subgrid">
+                <h2>Лідерство та навички</h2>
+                <p>Очолив команду з 3-х осіб для студентського хакатону, розробивши успішний MVP та зібравши понад $5,000 інвестицій.</p>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript (ES6+), React, Redux, Node.js.</li>
+                    <li>Git, GitHub, RESTful API, Figma.</li>
+                    <li>Швидке навчання, відповідальність, робота в команді.</li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer class="cv-footer dotted-grid">
+        <div id="browser-info" class="dotted-subgrid"></div>
+        <p><small>&copy; 2026 Тукачов Денис</small></p>
     </footer>
 </div>
 
@@ -58,28 +163,16 @@
 
         <form action="https://formspree.io/f/mwvjnbrz" method="POST" class="feedback-form">
             <div class="form-group">
-                <label>
-                    Ваше ім'я:
-                    <input type="text" name="name" required>
-                </label>
+                <label>Ваше ім'я:<input type="text" name="name" required></label>
             </div>
             <div class="form-group">
-                <label>
-                    Your email:
-                    <input type="email" name="email" required>
-                </label>
+                <label>Your email:<input type="email" name="email" required></label>
             </div>
             <div class="form-group">
-                <label>
-                    Номер телефону:
-                    <input type="tel" name="phone" required>
-                </label>
+                <label>Номер телефону:<input type="tel" name="phone" required></label>
             </div>
             <div class="form-group">
-                <label>
-                    Your message:
-                    <textarea name="message" rows="4" required></textarea>
-                </label>
+                <label>Your message:<textarea name="message" rows="4" required></textarea></label>
             </div>
             <button type="submit" class="submit-btn">Send</button>
         </form>
