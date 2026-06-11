@@ -2,14 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 /* --- Загальні налаштування --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* Ключовий елемент: пунктирна сітка на все */
-    outline: 1px dashed #ccc;
-    outline-offset: -1px; /* Щоб сітки не накладалися */
-}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -30,19 +22,10 @@ body {
 }
 
 /* --- Класи пунктирної сітки --- */
-.dotted-grid {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0px; /* Сітка в стилі */
-    outline: 1px dashed #ccc; /* Подвійне, щоб було чітко */
-}
-
-.dotted-subgrid {
-    padding: 10px;
-    outline: 1px dashed #ccc;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+/* Робимо пунктир тільки для головних контейнерів */
+.dotted-grid, .dotted-subgrid {
+    border: 1px dashed #a0a0a0;
+    padding: 15px;
 }
 
 /* --- Верхівка (Тема та Графіка) --- */
@@ -54,11 +37,15 @@ body {
 }
 
 /* --- Шапка резюме --- */
+/* Додаємо товсту фіолетову лінію під шапкою, як в оригіналі */
 .cv-header {
     display: flex;
     flex-direction: row;
-    min-height: 120px; /* Змінено з height на min-height */
-    flex-wrap: wrap; /* Рятує від наїжджання тексту */
+    min-height: 120px;
+    flex-wrap: wrap;
+    border-bottom: 6px solid #5a4b7a; /* Товста лінія */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .header-main-content {
@@ -120,19 +107,27 @@ body {
     flex-grow: 1; /* Дозволяє зайняти вільний простір */
 }
 
+/* Фарбуємо праву колонку у світло-фіолетовий/сірий колір */
 .right-column {
     width: 40%;
-    min-width: 250px; /* Не дає колонці стати занадто вузькою */
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    background-color: #e8e8f0; /* Колір фону як на оригіналі */
+    padding: 20px;
+    border-left: 1px solid #d0d0d0;
 }
 
 /* --- Секції досвіду та освіти (Пунктирна вкладеність) --- */
+/* Прибираємо рамку з кожного елемента досвіду, залишаємо лише лінію знизу для розділення */
 .exp-item, .edu-item {
     margin-bottom: 15px;
-    padding: 8px;
-    outline: 1px dashed #ddd; /* Трохи світліше для вкладеності */
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc;
+}
+.exp-item:last-child, .edu-item:last-child {
+    border-bottom: none; /* Забираємо лінію в останнього елемента */
 }
 
 .item-header {
@@ -265,4 +260,8 @@ body.dark-theme .modal-content {
 }
 body.dark-theme .form-group input, body.dark-theme .form-group textarea {
     background-color: #3a3a3a; border-color: #555; color: #e0e0e0;
+}
+body.dark-theme .right-column {
+    background-color: #2a2a35; /* Темніший відтінок для нічного режиму */
+    border-left-color: #444;
 }
